@@ -1,0 +1,51 @@
+@import './common/_functional.scss';
+
+header{
+  padding: 0 px2rem(30px);
+  height: px2rem(80px);
+  line-height: px2rem(80px);  
+  background: #666;
+  .logo{
+    float: left;
+    height: inherit;
+    color: #fff;
+    @include fsize(30px);
+  }
+  ul{
+    padding: 0;
+    float: right;
+    list-style: none;
+    li{
+      margin-right: px2rem(10px);
+      height: px2rem(80px);
+      float: left;
+      color: #fff;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.box{
+  width: px2rem(750px);
+  background: greenyellow;
+  h1{
+    @include fsize(30px)
+  }
+}
+
+.box2{
+  width: 10rem;
+  .left{
+    float: left;
+    width: px2rem(350px);
+    background: #ddd;
+  }
+  .right{
+    float: right;
+    width: px2rem(400px);
+    box-sizing: border-box;
+    padding: px2rem(10px);
+  }
+}

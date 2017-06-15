@@ -1,0 +1,49 @@
+header {
+  padding: 0 0.4rem;
+  height: 1.06667rem;
+  line-height: 1.06667rem;
+  background: #666; }
+  header .logo {
+    float: left;
+    height: inherit;
+    color: #fff;
+    font-size: 15px; }
+    [data-dpr="2"] header .logo {
+      font-size: 30px; }
+    [data-dpr="3"] header .logo {
+      font-size: 45px; }
+  header ul {
+    padding: 0;
+    float: right;
+    list-style: none; }
+    header ul li {
+      margin-right: 0.13333rem;
+      height: 1.06667rem;
+      float: left;
+      color: #fff; }
+      header ul li:last-child {
+        margin-right: 0; }
+
+.box {
+  width: 10rem;
+  background: greenyellow; }
+  .box h1 {
+    font-size: 15px; }
+    [data-dpr="2"] .box h1 {
+      font-size: 30px; }
+    [data-dpr="3"] .box h1 {
+      font-size: 45px; }
+
+.box2 {
+  width: 10rem; }
+  .box2 .left {
+    float: left;
+    width: 4.66667rem;
+    background: #ddd; }
+  .box2 .right {
+    float: right;
+    width: 5.33333rem;
+    box-sizing: border-box;
+    padding: 0.13333rem; }
+
+/*# sourceMappingURL=index.css.map */

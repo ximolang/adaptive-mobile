@@ -1,0 +1,20 @@
+// PX转换为rem
+@function px2rem($px, $default-font-size: 75px) {
+  @if (unitless($px)) {
+    @return px2rem($px + 0px);
+  } @else if (unit($px) == rem) {
+    @return $px;
+  }
+  @return ($px / $default-font-size) + rem;
+}
+
+// 通过dpr设置字体
+@mixin fsize ($font-size) {
+  font-size: $font-size / 2;
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+  [data-dpr="3"] & {
+    font-size: $font-size * 1.5;
+  }
+}

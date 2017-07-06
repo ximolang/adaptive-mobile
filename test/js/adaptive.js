@@ -64,7 +64,7 @@
     if (htmlEle.firstElementChild) {
       htmlEle.firstElementChild.appendChild(meta)
     } else {
-      console.warn('这个页面没有内容吖...')
+      console.warn('文档不存在内容')
     }
   }
 

@@ -18,3 +18,14 @@
     font-size: $font-size * 1.5;
   }
 }
+
+// 通过data-dpr设置样式，只能传入可计算值，如字体大小长宽等px值
+@mixin len($key, $value) {
+  $key: $value / 2;
+  [data-dpr="2"] & {
+    $key: $value;
+  }
+  [data-dpr="3"] & {
+    $key: $value * 1.5;
+  }
+}
